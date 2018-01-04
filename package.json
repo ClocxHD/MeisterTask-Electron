@@ -7,7 +7,7 @@
   "dependencies": {},
   "devDependencies": {
     "electron": "^1.7.10",
-    "electron-packager": "^10.1.1",
+    "electron-builder": "^19.52.1",
     "gulp": "github:gulpjs/gulp#4.0",
     "gulp-clean-css": "^3.9.2",
     "gulp-concat": "^2.6.1",
@@ -17,8 +17,18 @@
     "pump": "^2.0.0"
   },
   "scripts": {
-    "package-linux-x64": "electron-packager . MeisterTask-Electron --overwrite --asar --platform=linux --arch=x64 --icon=assets/icons/icon.png --prune=true --out=release-builds",
-    "package-linux-x86": "electron-packager . MeisterTask-Electron --overwrite --asar --platform=linux --arch=ia32 --icon=assets/icons/icon.png --prune=true --out=release-builds"
+    "postinstall": "install-app-deps",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "de.fthielen.meistertask",
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ]
+    }
   },
   "repository": {
     "type": "git",
