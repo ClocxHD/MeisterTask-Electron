@@ -1,11 +1,19 @@
 {
   "name": "meistertask-electron",
+  "productName": "MeisterTask Unofficial",
   "version": "1.0.0",
-  "description": "Electron Wrapper for MeisterTask",
+  "description": "Unofficial Electron Wrapper for MeisterTask",
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
-    "electron": "^1.7.10"
+    "electron": "^1.7.10",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-clean-css": "^3.9.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "pump": "^2.0.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
