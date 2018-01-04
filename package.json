@@ -18,7 +18,7 @@
   },
   "scripts": {
     "package-linux-x64": "electron-packager . MeisterTask-Electron --overwrite --asar --platform=linux --arch=x64 --icon=assets/icons/icon.png --prune=true --out=release-builds",
-    "package-linux-x86": "electron-packager . MeisterTask-Electron --overwrite --asar --platform=linux --arch=x86 --icon=assets/icons/icon.png --prune=true --out=release-builds"
+    "package-linux-x86": "electron-packager . MeisterTask-Electron --overwrite --asar --platform=linux --arch=ia32 --icon=assets/icons/icon.png --prune=true --out=release-builds"
   },
   "repository": {
     "type": "git",
