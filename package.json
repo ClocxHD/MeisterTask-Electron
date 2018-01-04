@@ -27,8 +27,8 @@
   },
   "build": {
     "appId": "de.fthielen.meistertask",
-    "category": "Utility",
     "linux": {
+      "category": "Utility",
       "target": [
         "AppImage",
         "deb"
