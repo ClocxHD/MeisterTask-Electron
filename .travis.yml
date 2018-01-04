@@ -24,5 +24,4 @@ install:
 
 script:
   - gulp
-  - npm run package-linux-x64
-  - npm run package-linux-x86
+  - npm run dist
