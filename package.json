@@ -1,0 +1,23 @@
+{
+  "name": "meistertask-electron",
+  "version": "1.0.0",
+  "description": "Electron Wrapper for MeisterTask",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "^1.7.10"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/fthielen/MeisterTask-Electron.git"
+  },
+  "author": "Fabian Thielen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/fthielen/MeisterTask-Electron/issues"
+  },
+  "homepage": "https://gitlab.com/fthielen/MeisterTask-Electron#README"
+}
