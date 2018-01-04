@@ -1,6 +1,10 @@
 {
   "name": "meistertask-electron",
   "productName": "MeisterTask Unofficial",
+  "author": {
+    "name": "Fabian Thielen",
+    "email": "electron@fabian-thielen.io"
+  },
   "version": "1.0.0",
   "description": "Unofficial Electron Wrapper for MeisterTask",
   "main": "index.js",
@@ -23,6 +27,7 @@
   },
   "build": {
     "appId": "de.fthielen.meistertask",
+    "category": "Utility",
     "linux": {
       "target": [
         "AppImage",
@@ -34,7 +39,6 @@
     "type": "git",
     "url": "git+https://gitlab.com/fthielen/MeisterTask-Electron.git"
   },
-  "author": "Fabian Thielen",
   "license": "ISC",
   "bugs": {
     "url": "https://gitlab.com/fthielen/MeisterTask-Electron/issues"
