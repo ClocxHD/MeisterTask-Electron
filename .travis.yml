@@ -1,0 +1,28 @@
+sudo: required
+dist: trusty
+
+language: node_js
+node_js: "8"
+
+os:
+  - linux
+
+env:
+  global:
+    - ELECTRON_CACHE=$HOME/.cache/electron
+    - ELECTRON_BUILDER_CACHE=$HOME/.cache/electron-builder
+
+cache:
+  directories:
+  - node_modules
+  - $HOME/.cache/electron
+  - $HOME/.cache/electron-builder
+  - $HOME/.npm/_prebuilds
+
+install:
+  - npm i
+
+script:
+  - gulp
+  - npm run package-linux-x64
+  - npm run package-linux-x86
