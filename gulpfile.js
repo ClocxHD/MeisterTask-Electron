@@ -10,12 +10,12 @@ const concat = require('gulp-concat');
 
 const paths = {
     styles: {
-        src: 'assets/*.sass',
-        dest: 'dist/'
+        src: 'assets/pre/*.sass',
+        dest: 'assets/post/'
     },
     scripts: {
-        src: 'assets/*.js',
-        dest: 'dist/'
+        src: 'assets/pre/*.js',
+        dest: 'assets/post/'
     }
 };
 

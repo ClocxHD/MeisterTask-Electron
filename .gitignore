@@ -1,4 +1,6 @@
 .idea
 node_modules
 dist
-release-builds
+npm-debug.log
+package-lock.json
+assets/post

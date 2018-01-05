@@ -14,10 +14,14 @@ app.on('ready', function () {
         height: 1080,
         resizable: true,
         frame: false,
+        show: false,
         icon: path.join(__dirname, 'assets/icons/icon.png')
     });
 
     mainWindow.loadURL('file://' + __dirname + '/index.html');
+    mainWindow.on('ready-to-show', () => {
+        mainWindow.show();
+    });
     mainWindow.focus();
     mainWindow.on('closed', function () {
         mainWindow = null;
