@@ -18,17 +18,14 @@ cache:
 install:
 - npm i
 script:
-- gulp
 - npm run dist
-before_deploy:
-- git tag "$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)"
 deploy:
   provider: releases
   api_key:
     secure: EGFC8COoSPPWWX4PLoACvbplCqK08Ihx/soTQlawrsbScZroFIDdh0imo7oZ10xfGRbaPT8EACkujf0XdIBKjsWGHT8ssKooPlZyUFq/XgZ8iZUmFqq8rapacYkA49CSq8ir8KKYtWFZ7ORgNPgmibo5fvz6SR8uHbHj7mdq3VmpvCuOxGbfaJZTm7qcDZcgNTM0JfRs8fkkfYCDG6jGB694RGVquHVRtpFGXGVGnwNkpx5buqbis8GmjK24gU/6M6h96Ps3inI/qqW6nIEUSkwxvNBhFKfHE9GVUEL+kplELqyVO6FZ+3NpR8ONghhfRxSQV+YFDNA0WhKvsxIuNY9NlM8FjQ5MyIh1jT2E194D3CuzQTAKMDyn27S4IxXT/ETMQ9391j86aYt96qvvGgxFezVzv6xIalBQAWy4KY+0O89GAPmX7IMdVPBjtIvmtzIkqwRNVp4soGzOYhmYCMzinuSji6Qn6SoY8LLmFBvYxv0V35mq+aar0mxoUne8VpeTGSHdGidonhfNTn8uaMCrg02/4nm5MvEkmT9s/SylE4X4WFge9BHSBB1JdiRtmASbA5oDk3gVv84xrMVwD+A59rFLrKA6laRNC4GzMzgBFO7LhpUk29LPP1SnWQYoIYqfBH9zIFrtH/fUyRudhfDx3PPOxnNUAwjRFVbEfeY=
   file:
-  - dist/meistertask-electron-1.0.2-x86_64.AppImage
-  - dist/meistertask-electron_1.0.2_amd64.deb
+  - dist/meistertask-electron-1.0.3-x86_64.AppImage
+  - dist/meistertask-electron_1.0.3_amd64.deb
   skip_cleanup: true
   on:
     repo: ClocxHD/MeisterTask-Electron

@@ -13,12 +13,16 @@ app.on('ready', function () {
         width: 1920,
         height: 1080,
         resizable: true,
-        frame: false,
         show: false,
-        icon: path.join(__dirname, 'assets/icons/icon.png')
+        icon: path.join(__dirname, 'assets/icons/icon.png'),
+        webPreferences: {
+            nodeIntegration: false
+        }
     });
 
-    mainWindow.loadURL('file://' + __dirname + '/index.html');
+    mainWindow.setMenu(null);
+
+    mainWindow.loadURL('https://www.meistertask.com/app/dashboard');
     mainWindow.on('ready-to-show', () => {
         mainWindow.show();
     });

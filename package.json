@@ -5,20 +5,13 @@
     "name": "Fabian Thielen",
     "email": "electron@fabian-thielen.io"
   },
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Unofficial Electron Wrapper for MeisterTask",
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
     "electron": "^1.7.10",
-    "electron-builder": "^19.52.1",
-    "gulp": "github:gulpjs/gulp#4.0",
-    "gulp-clean-css": "^3.9.2",
-    "gulp-concat": "^2.6.1",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.1.0",
-    "gulp-uglify": "^3.0.0",
-    "pump": "^2.0.0"
+    "electron-builder": "^19.52.1"
   },
   "scripts": {
     "postinstall": "install-app-deps",
