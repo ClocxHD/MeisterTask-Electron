@@ -5,7 +5,7 @@
     "name": "Fabian Thielen",
     "email": "electron@fabian-thielen.io"
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Unofficial Electron Wrapper for MeisterTask",
   "main": "index.js",
   "dependencies": {},
@@ -37,11 +37,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/fthielen/MeisterTask-Electron.git"
+    "url": "git+https://github.com/ClocxHD/MeisterTask-Electron.git"
   },
   "license": "ISC",
   "bugs": {
-    "url": "https://gitlab.com/fthielen/MeisterTask-Electron/issues"
+    "url": "https://github.com/ClocxHD/MeisterTask-Electron/issues"
   },
-  "homepage": "https://gitlab.com/fthielen/MeisterTask-Electron#README"
+  "homepage": "https://github.com/ClocxHD/MeisterTask-Electron/blob/master/README.md"
 }
