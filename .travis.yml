@@ -24,8 +24,8 @@ deploy:
   api_key:
     secure: Dj/Tc7O/anLe0l5zLdT1qPnz/EdbEwDq6jqtRtndP9QzrbCf05EYJEI8qjggLk2qKfLfXzLvFJk10EL3SUB5Ehd/wW2o2xUKV9Ov766OoM7jyitnH7J/uocNn/ZzXl5Q2b0mPSE970y9k+asdyyHMALQboHNp5EbHKekVaq+45gM1MBEoDp5cbpNQEW0itFgT+fFY4TUrSjPzaNoxE3TUbzBF+UGdaxmV8w/TjOJCcRmavKoHGC5QHfdMgGOgofcgdD9w6MTQxc1RMAJLx1LCC5/jKkXGZmNrZ8pkEz8W9R+2R1D6J9HZPg0pBKHuoW2h26+41Cts6UZLkZlpkT1heay/XALztLezLGiNTO8QHFG9shPObK1064DW/a7uCt5fa7yH7EuzgMb3EEeCjEdTX3jQC50RycvKSTie4hhH34mF9BxQjhqnKGzV/5KSgDQPs/FWHiBSft5Nc+0VEGhVncxPk7IJKSCgNaKRtlMVV+XflTgpWB1Z3n3b37NC69VwVJbdvfXqhZq+clDISCGFkirxJclZn3+nNU2REp5vuqDXn4JOi7NzabSlzeehGos343gIK8YYd0mIMMCyWfPlHv3PrJD9I2QTNjyKrq2suBBDG0Xj5FEoFGX6eCnarMn22mx1Cb2/Gsg63eEmryHEND4zQvzdh2/Y+XYQrAnZ9w=
   file:
-  - dist/meistertask-electron-1.0.1-x86_64.AppImage
-  - dist/meistertask-electron_1.0.1_amd64.deb
+  - dist/meistertask-electron-1.0.2-x86_64.AppImage
+  - dist/meistertask-electron_1.0.2_amd64.deb
   skip_cleanup: true
   on:
     repo: ClocxHD/MeisterTask-Electron
