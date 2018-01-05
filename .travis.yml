@@ -8,6 +8,7 @@ env:
   global:
   - ELECTRON_CACHE=$HOME/.cache/electron
   - ELECTRON_BUILDER_CACHE=$HOME/.cache/electron-builder
+  - secure: bFQWdP860E4ASgJ8SEmFAzvy6lklbgtP3oIy3k/bTaKSzZ32dsJ1Sov30TvP+0r/jYXNurtkL9jFgpNX8IKYUWacWj1hkeH8hf67/Pw8fVFirF3QqV+BAAg/i0UN/GXF/+nEj1yMffWCljtqD0qzHZ8znlx3ylh2WV9jqUn8xYbgwLS/ru6rAhKf8wFWVqWbexqxauV2pp/+hQxdfQrAdDCurE1D+m6GP1jJzhrV8sh6R0++rrNWU6S0gr0q3IPwm8kXaOIyS/4xxAwbRCYFsfoEPt2/iLbAet7q3o4gO9WgVoW7P5mdv/e/22PmYKwD2DCFn3d6C663WAYJSW5YZiGJC+/PBoa+InpyrsKWOKwnWAryyp/QKq7iMnIuHE/qpd5XXUZ34/LYHZhpeliv72KWRvE9TdWMsg6rmKVLK+W8wLVKHUyr9spytfURKURAbQEWwj3A2a7qvWtb8GggTSayFBNfrHJE8r0urqJoMueplWMj5x+5BR8t6GST0b35G319k056Nn0KpuCEgdrdgHvIrMUHiDRHopYLLjgUqN/pTWx+Xxf6Xj2+YM7FNUzXDbbUEFweD1t41I/+hQeqQR1nyFFHqbcC9/l21S1FcQxxcWmOxh1kvz10WTdVj6mj4Ge1Yru0zH+NlUKSx5eVPBsHFO6i4/Vw0JbDpu9IPW4=
 cache:
   directories:
   - node_modules
@@ -20,7 +21,7 @@ script:
 - gulp
 - npm run dist
 before_deploy:
-  - git tag "$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)"
+- git tag "$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)"
 deploy:
   provider: releases
   api_key:
